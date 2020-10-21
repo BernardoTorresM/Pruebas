@@ -1,2 +1,2 @@
 # Pruebas
-### Práctia de línea del tiempo de la revolución industrial
+### Práctica de línea del tiempo de la revolución industrial
