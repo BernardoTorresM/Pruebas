@@ -26,12 +26,14 @@ namespace ConsoleApplication1
             bool menuLoop = true;
             do
             {
-                Console.WriteLine("Introduce una fecha de la revolución industrial");
-                int dia = Convert.ToInt32(Console.ReadLine());
-                int mes = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("\nIntroduce el año");
                 int year = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Introduce el mes");
+                int mes = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Introduce el día");
+                int dia = Convert.ToInt32(Console.ReadLine());
 
-                DateTime fecha = convertirFecha(dia,mes,year);
+                DateTime fecha = convertirFecha(year,mes,dia);
 
                 if (imprimirValidacion(fecha) == true)
                     imprimirLapso(fecha);
