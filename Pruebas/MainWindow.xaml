@@ -5,8 +5,159 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pruebas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="720" Width="1290" ResizeMode="NoResize">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="#d1d1d1" Grid.Column="0"/>
+        <Border Background="#d1d1d1" Grid.Column="1"/>
+        <Border Background="#d1d1d1" Grid.Column="2"/>
+        <Label Grid.Column="1" HorizontalAlignment="Center" FontSize="40" Content="Línea de tiempo: Revolución industrial del 1.0 al 4.0" />
+        <Label Grid.Column="1" HorizontalAlignment="Left" FontSize="25" Margin="97,60,0,0" Content="Línea de tiempo por FEI-LIS2020"/>
+
+        <TextBlock TextWrapping="WrapWithOverflow" TextAlignment="Justify" Grid.Column="1" Grid.Row="1" FontSize="20" Margin="30,15,30,15">
+            La Revolución Industrial es un proceso de transformación económica, social y tecnológica que se inició en la segunda mitad del siglo XVIII en el Reino de Gran Bretaña, y que, según varios expertos, no ha terminado. La industria evoluciona impulsada por la tecnología, transformando la manera en que se producen los bienes y servicios que atienden las necesidades de nuestra sociedad. ¿Quiéres conocer los periodos de esta evolución?
+        </TextBlock>
+
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label FontSize="30" Padding="10" FontWeight="DemiBold" Foreground="Violet" Content="Indica una fecha:" />
+            <DatePicker Name="selectorFecha" SelectedDateChanged="EnCambioDeFecha" Height="50" Grid.Column="1" FontSize="25" Focusable="False"/>
+            <Label Name="textoMalo" FontSize="24" FontWeight="DemiBold" Foreground="Red" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Margin="25,0,10,0" Grid.Column="2"/>
+        </Grid>
+
+        <Grid Grid.Column="1" Grid.Row="3" Margin="80,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="95" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Column="0" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" Content="1760 a 1830"/>
+            <TextBlock Grid.Column="0" Grid.Row="1" Margin="8" FontSize="28" FontWeight="DemiBold" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Text="Revolución Industrial 1.0"/>
+            <Label Grid.Column="1" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" Content="1850 a 1914"/>
+            <TextBlock Grid.Column="1" Grid.Row="1" Margin="8" FontSize="28" FontWeight="DemiBold" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Text="Revolución Industrial 2.0"/>
+            <Label Grid.Column="2" Grid.Row="1" FontSize="25" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Content="1900"/>
+            <Label Grid.Column="3" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" Content="1760 a 1830"/>
+            <TextBlock Grid.Column="3" Grid.Row="1" Margin="8" FontSize="28" FontWeight="DemiBold" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Text="Revolución Industrial 3.0"/>
+            <Label Grid.Column="4" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" Content="1760 a 1830"/>
+            <TextBlock Grid.Column="4" Grid.Row="1" Margin="8" FontSize="28" FontWeight="DemiBold" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Text="Revolución Industrial 4.0"/>
+        </Grid>
         
+        <Grid Grid.Column="1" Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" Content="1700"/>
+            <Label Grid.Column="41" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="25" Content="2100"/>
+            <Border Name="decada_1710" Grid.Column="1" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1720" Grid.Column="2" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1730" Grid.Column="3" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1740" Grid.Column="4" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1750" Grid.Column="5" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1760" Grid.Column="6" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1770" Grid.Column="7" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1780" Grid.Column="8" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1790" Grid.Column="9" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1800" Grid.Column="10" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1810" Grid.Column="11" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1820" Grid.Column="12" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1830" Grid.Column="13" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1840" Grid.Column="14" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1850" Grid.Column="15" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1860" Grid.Column="16" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1870" Grid.Column="17" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1880" Grid.Column="18" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1890" Grid.Column="19" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1900" Grid.Column="20" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1910" Grid.Column="21" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1920" Grid.Column="22" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1930" Grid.Column="23" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1940" Grid.Column="24" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1950" Grid.Column="25" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1960" Grid.Column="26" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1970" Grid.Column="27" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1980" Grid.Column="28" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_1990" Grid.Column="29" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2000"  Grid.Column="30" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2010" Grid.Column="31" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2020" Grid.Column="32" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2030" Grid.Column="33" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2040" Grid.Column="34" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2050" Grid.Column="35" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2060" Grid.Column="36" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2070" Grid.Column="37" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2080" Grid.Column="38" Background="Aqua" Visibility="Hidden"/>
+            <Border Name="decada_2090" Grid.Column="39" Background="Aqua" Visibility="Hidden"/>
+        </Grid>
+
+        <TextBlock Name="textoExplicativo" Grid.Column="1" Grid.Row="5" Margin="25,5" TextAlignment="Justify" FontSize="18.6" TextWrapping="WrapWithOverflow"/>
+
     </Grid>
+
 </Window>
